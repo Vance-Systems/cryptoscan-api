@@ -1,0 +1,26 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "CryptoScan - Smart Contract Vulnerability & RugCheck API",
+    "description": "Automated EVM smart contract honeypot detection, liquidity locks audit, and token risk scoring.",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://cryptoscan-api.onrender.com",
+      "description": "Production Cloud Server"
+    }
+  ],
+  "paths": {
+    "/health": {
+      "get": {
+        "summary": "Health Check",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  }
+}
